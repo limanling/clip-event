@@ -10,8 +10,6 @@
       * [VOA training data](#)
       * [Evaluation data](#)
   * [Code](#code)
-      * [Code structure](#)
-      * [Our method CLIP-event (core code)](#)
   * [Model](#model)
       * [Best performed models](#)
   * [Preprocessing](#preprocessing)
@@ -22,10 +20,8 @@
       * [Negative description sample generation](#)
   * [Training](#training)
       * [Configuration file](#)
-      * [Training on dev box](#)
-      * [Training on ITP](#)
+      * [Training](#)
   * [Testing](#testing)
-  * [OtherDocuments](#otherdocuments)
 
 ## Overview
 Real-world multimedia applications require image-language models to understand multiple levels of alignments such as verbs, objects, as well as semantic structures. However, existing image-language pretraining models focus on the understanding of images or objects, ignoring the verb semantics and structures. Also, they heavily rely on fine-tuning, while real-world applications require the ability to handle open vocabulary verbs. In this work, we introduce a contrastive learning framework to enforce V+L models to understand events and their argument roles by taking the advantage of text information extraction tools to generate hard negative descriptions. To enforce the model to understand event structures, we design a graph alignment loss via optimal transport, and also augment transformers with local attention heads over events and arguments. To evaluate the model's ability to handle open vocabulary verbs, our experiments are conducted in an unsupervised setting, showing that our model can achieve considerable improvements on a variety of tasks such as multimedia event extraction, grounded situation recognition, visual commonsense reasoning, etc.
