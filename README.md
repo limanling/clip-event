@@ -10,8 +10,6 @@
       * [VOA training data](#)
       * [Evaluation data](#)
   * [Code](#code)
-  * [Model](#model)
-      * [Best performed models](#)
   * [Preprocessing](#preprocessing)
       * [Text IE scripts](#)
       * [Text OpenIE scripts](#)
@@ -113,10 +111,6 @@ The code structure for `CLIP-event` is as follows:
 ---------------- eval_*  # evaluation code
 ---------------- utils_*  # utils
 ```
-
-## Model
-
-Checkpoints are saved to [sdrgstd01scus](https://sdrgstd01scus.blob.core.windows.net/user/t-manlingli/checkpoint).
 
 ### Best performed models
 The hyperparamters and training configuration is `config-ot-all-itp-a100-8gpu-template.json`, and the model checkpoints are in sdrgprmblob01scus:`t-manlingli/checkpoint/best`. 
